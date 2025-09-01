@@ -66,7 +66,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
     <GlassCard className="text-center w-full max-w-2xl animate-scale-in">
       <div className="flex justify-center mb-6">
         <video width="600" height="450" autoPlay loop muted>
-          <source src="./assets/gif1.mp4" type="video/mp4" />
+          <source src="./gif1.mp4" type="video/mp4" />
         </video>
       </div>
       

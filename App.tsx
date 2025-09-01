@@ -40,7 +40,7 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full bg-gray-900 text-white font-sans overflow-hidden">
       <Navbar />
-      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(./assets/img.jpg)'}}></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(./img.jpg)'}}></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       
       <main className="relative z-10 flex items-center justify-center min-h-screen p-4">

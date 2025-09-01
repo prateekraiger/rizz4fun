@@ -13,7 +13,7 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({ userName, onRestart }) =>
     <GlassCard className="text-center w-full max-w-2xl animate-scale-in">
       <div className="flex justify-center mb-6">
         <video width="400" height="300" autoPlay loop muted>
-          <source src="./assets/final.mp4" type="video/mp4" />
+          <source src="./final.mp4" type="video/mp4" />
         </video>
       </div>
       <h1 className="text-4xl font-bold mb-2 tracking-tight">Congratulations, {userName}!</h1>

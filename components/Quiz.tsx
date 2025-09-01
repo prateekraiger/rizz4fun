@@ -6,9 +6,10 @@ import GlassCard from './GlassCard';
 interface QuizProps {
   userName: string;
   onSuccess: () => void;
+  onWrongAnswer: () => void;
 }
 
-const Quiz: React.FC<QuizProps> = ({ userName, onSuccess }) => {
+const Quiz: React.FC<QuizProps> = ({ userName, onSuccess, onWrongAnswer }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -44,6 +45,7 @@ const Quiz: React.FC<QuizProps> = ({ userName, onSuccess }) => {
           onSuccess();
         }
       } else {
+        onWrongAnswer();
         setSelectedAnswer(null);
         setIsAnswered(false);
       }

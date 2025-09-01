@@ -4,64 +4,99 @@ export const INSTAGRAM_ID = "@dev.prat1k";
 
 export const QUIZ_QUESTIONS: Question[] = [
   {
-    question: "Are you HTML? Because you're the structure of my dreams.",
+    question: "Can you cook?",
     options: [
-      "Aww, that's sweet!",
-      "I prefer CSS styling.",
-      "You're making me blush!",
-      "Nice one!",
+      "Yes, at least basic meals ",
+      "No, never tried",
+      "Only instant noodles",
+      "I always order food",
     ],
-    correctAnswer: "Aww, that's sweet!",
+    correctAnswer: "Yes, at least basic meals ",
   },
   {
-    question: "Best way to fix a bug in love?",
+    question: "Do you believe in working out regularly?",
     options: [
-      "console.log(feelings)",
-      "Good communication",
-      "Ignore it and hope it works",
-      "Delete the code",
+      "Yes, fitness is important 💪 ",
+      "No, it’s a waste of time",
+      "Only when I gain weight",
+      "Never, I hate sweating",
     ],
-    correctAnswer: "Good communication",
+    correctAnswer: "Yes, fitness is important 💪 ",
   },
   {
-    question: "Are you CSS? Because you make everything look beautiful.",
+    question: "How do you usually deal with problems?",
     options: [
-      "You're so charming!",
-      "I do love good styling.",
-      "That's adorable!",
-      "Smooth operator!",
+      "I face them and solve 💡 ",
+      "I run away",
+      "I blame others",
+      "I ignore till it’s too late",
     ],
-    correctAnswer: "You're so charming!",
+    correctAnswer: "I face them and solve 💡 ",
+  },
+  {
+    question: "What’s your view on loyalty in a relationship?",
+    options: [
+      "100% loyal, always ",
+      "It’s not a big deal",
+      "Depends on situation",
+      "Everyone cheats, so why not",
+    ],
+    correctAnswer: "100% loyal, always ",
+  },
+  {
+    question: "Do you respect personal goals and ambitions?",
+    options: [
+      "Yes, I support and motivate ",
+      "No, I only care about mine",
+      "I feel jealous if my partner succeeds",
+      "I don’t think goals matter",
+    ],
+    correctAnswer: "Yes, I support and motivate ",
+  },
+  {
+    question: "How do you see money and success?",
+    options: [
+      "Important to build a better life ",
+      "Doesn’t matter at all",
+      "Only lucky people succeed",
+      "I don’t care about money",
+    ],
+    correctAnswer: "Important to build a better life ",
+  },
+  {
+    question: "If your partner is upset, what would you do?",
+    options: [
+      "Listen, comfort, and support ",
+      "Tell them to stop overreacting",
+      "Ignore until they’re fine",
+      "Get angry back",
+    ],
+    correctAnswer: "Listen, comfort, and support ",
+  },
+  {
+    question: "Do you believe in self-growth?",
+    options: [
+      "Yes, I always try to improve ",
+      "No, I’m fine the way I am",
+      "Only if others force me",
+      "Growth is just a trend",
+    ],
+    correctAnswer: "Yes, I always try to improve ",
+  },
+  {
+    question: "How do you handle arguments?",
+    options: [
+      "Stay calm, talk it out ",
+      "Shout louder to win",
+      "Silent treatment for days",
+      "Break up immediately",
+    ],
+    correctAnswer: "Stay calm, talk it out ",
   },
   {
     question:
-      "If you were a function, you'd be called cutie() because you always return true to my heart.",
-    options: [
-      "That's the sweetest code I've heard!",
-      "You're making me smile!",
-      "function blush() { return true; }",
-      "All of the above!",
-    ],
-    correctAnswer: "That's the sweetest code I've heard!",
+      "If you had to choose one quality in a partner, what would it be?",
+    options: ["Loyalty ", "Richness", "Looks only", "Popularity"],
+    correctAnswer: "Loyalty ",
   },
-  {
-    question: "let heart = 'taken'; Can you change it?",
-    options: [
-      "Yes, with reassignment.",
-      "No, let is permanent.",
-      "Only const can change.",
-      "It's invalid code.",
-    ],
-    correctAnswer: "Yes, with reassignment.",
-  },
-  // {
-  //   question: "Are you a variable? Because I want to declare my love for you.",
-  //   options: [
-  //     "Let me think about it!",
-  //     "That's so cute!",
-  //     "You're declared accepted!",
-  //     "Const-antly thinking of you too!",
-  //   ],
-  //   correctAnswer: "That's so cute!",
-  // },
 ];

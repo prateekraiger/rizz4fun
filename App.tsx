@@ -4,24 +4,36 @@ import { GameState } from './types';
 import HomePage from './components/HomePage';
 import Quiz from './components/Quiz';
 import SuccessScreen from './components/SuccessScreen';
+import GameOverScreen from './components/GameOverScreen';
 import Navbar from './components/Navbar';
 
 const App: React.FC = () => {
   const [gameState, setGameState] = useState<GameState>(GameState.Home);
   const [userName, setUserName] = useState<string>('');
+  const [wrongTries, setWrongTries] = useState(0);
 
   const handleStart = useCallback((name: string) => {
     setUserName(name);
     setGameState(GameState.Quiz);
+    setWrongTries(0);
   }, []);
 
   const handleQuizSuccess = useCallback(() => {
     setGameState(GameState.Success);
   }, []);
+
+  const handleWrongAnswer = useCallback(() => {
+    const newWrongTries = wrongTries + 1;
+    setWrongTries(newWrongTries);
+    if (newWrongTries >= 3) {
+      setGameState(GameState.GameOver);
+    }
+  }, [wrongTries]);
   
   const handleRestart = useCallback(() => {
     setUserName('');
     setGameState(GameState.Home);
+    setWrongTries(0);
   }, []);
 
   const renderContent = () => {
@@ -29,9 +41,11 @@ const App: React.FC = () => {
       case GameState.Home:
         return <HomePage onStart={handleStart} />;
       case GameState.Quiz:
-        return <Quiz userName={userName} onSuccess={handleQuizSuccess} />;
+        return <Quiz userName={userName} onSuccess={handleQuizSuccess} onWrongAnswer={handleWrongAnswer} />;
       case GameState.Success:
         return <SuccessScreen userName={userName} onRestart={handleRestart} />;
+      case GameState.GameOver:
+        return <GameOverScreen onRestart={handleRestart} />;
       default:
         return <HomePage onStart={handleStart} />;
     }

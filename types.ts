@@ -5,6 +5,7 @@ export enum GameState {
   Quiz,
   Success,
   Failure,
+  GameOver,
 }
 
 export interface Question {

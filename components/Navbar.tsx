@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
       </div>
       
       <audio ref={audioRef} loop autoPlay>
-        <source src="./song.mp3" type="audio/mpeg" />
+        <source src="/song.mp3" type="audio/mpeg" />
       </audio>
     </nav>
   );

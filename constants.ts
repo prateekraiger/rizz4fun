@@ -1,102 +1,110 @@
 import { Question } from "./types";
 
-export const INSTAGRAM_ID = "@dev.prat1k";
+export const INSTAGRAM_ID = "@your_dating_profile";
 
 export const QUIZ_QUESTIONS: Question[] = [
   {
-    question: "Can you cook?",
+    question: "What's your cooking situation like? 👨‍🍳",
     options: [
-      "Yes, at least basic meals ",
-      "No, never tried",
-      "Only instant noodles",
-      "I always order food",
+      "I love cooking and can make delicious meals from scratch",
+      "I've never cooked anything in my life",
+      "Microwave meals and instant noodles are my specialty",
+      "I survive purely on takeout and delivery apps",
     ],
-    correctAnswer: "Yes, at least basic meals ",
+    correctAnswer: "I love cooking and can make delicious meals from scratch",
   },
   {
-    question: "Do you believe in working out regularly?",
+    question: "How important is staying fit and healthy to you? 💪",
     options: [
-      "Yes, fitness is important 💪 ",
-      "No, it’s a waste of time",
-      "Only when I gain weight",
-      "Never, I hate sweating",
+      "Very important - I work out regularly and eat well",
+      "Not important at all - it's a waste of time",
+      "I only exercise when I feel guilty about my weight",
+      "I actively avoid any form of physical activity",
     ],
-    correctAnswer: "Yes, fitness is important 💪 ",
+    correctAnswer: "Very important - I work out regularly and eat well",
   },
   {
-    question: "How do you usually deal with problems?",
+    question: "When life throws challenges your way, how do you respond? 🎯",
     options: [
-      "I face them and solve 💡 ",
-      "I run away",
-      "I blame others",
-      "I ignore till it’s too late",
+      "I face them head-on and find creative solutions",
+      "I avoid problems and hope they disappear",
+      "I immediately blame others for my troubles",
+      "I procrastinate until it becomes a crisis",
     ],
-    correctAnswer: "I face them and solve 💡 ",
+    correctAnswer: "I face them head-on and find creative solutions",
   },
   {
-    question: "What’s your view on loyalty in a relationship?",
+    question: "What does loyalty mean to you in a relationship? 💕",
     options: [
-      "100% loyal, always ",
-      "It’s not a big deal",
-      "Depends on situation",
-      "Everyone cheats, so why not",
+      "Complete faithfulness and commitment - no exceptions",
+      "It's not that important in modern relationships",
+      "It depends on how I'm feeling at the moment",
+      "Everyone cheats eventually, so why bother?",
     ],
-    correctAnswer: "100% loyal, always ",
+    correctAnswer: "Complete faithfulness and commitment - no exceptions",
   },
   {
-    question: "Do you respect personal goals and ambitions?",
+    question: "How do you feel about your partner's dreams and ambitions? ✨",
     options: [
-      "Yes, I support and motivate ",
-      "No, I only care about mine",
-      "I feel jealous if my partner succeeds",
-      "I don’t think goals matter",
+      "I actively support and encourage their goals",
+      "I only care about my own success",
+      "I get jealous when they achieve more than me",
+      "Dreams are unrealistic - focus on reality",
     ],
-    correctAnswer: "Yes, I support and motivate ",
+    correctAnswer: "I actively support and encourage their goals",
   },
   {
-    question: "How do you see money and success?",
+    question: "What's your perspective on financial responsibility? 💰",
     options: [
-      "Important to build a better life ",
-      "Doesn’t matter at all",
-      "Only lucky people succeed",
-      "I don’t care about money",
+      "Important for building a secure future together",
+      "Money doesn't matter at all in relationships",
+      "Success is just luck - hard work doesn't pay off",
+      "I prefer not to think about money",
     ],
-    correctAnswer: "Important to build a better life ",
-  },
-  {
-    question: "If your partner is upset, what would you do?",
-    options: [
-      "Listen, comfort, and support ",
-      "Tell them to stop overreacting",
-      "Ignore until they’re fine",
-      "Get angry back",
-    ],
-    correctAnswer: "Listen, comfort, and support ",
-  },
-  {
-    question: "Do you believe in self-growth?",
-    options: [
-      "Yes, I always try to improve ",
-      "No, I’m fine the way I am",
-      "Only if others force me",
-      "Growth is just a trend",
-    ],
-    correctAnswer: "Yes, I always try to improve ",
-  },
-  {
-    question: "How do you handle arguments?",
-    options: [
-      "Stay calm, talk it out ",
-      "Shout louder to win",
-      "Silent treatment for days",
-      "Break up immediately",
-    ],
-    correctAnswer: "Stay calm, talk it out ",
+    correctAnswer: "Important for building a secure future together",
   },
   {
     question:
-      "If you had to choose one quality in a partner, what would it be?",
-    options: ["Loyalty ", "Richness", "Looks only", "Popularity"],
-    correctAnswer: "Loyalty ",
+      "Your partner had a terrible day and is really upset. What do you do? 🤗",
+    options: [
+      "Listen carefully, offer comfort, and be emotionally supportive",
+      "Tell them they're overreacting and need to get over it",
+      "Ignore them until they calm down on their own",
+      "Get frustrated and make it about my own problems",
+    ],
+    correctAnswer:
+      "Listen carefully, offer comfort, and be emotionally supportive",
+  },
+  {
+    question: "How do you approach personal growth and self-improvement? 🌱",
+    options: [
+      "I'm always learning and working to become a better person",
+      "I'm perfect as I am - no need to change",
+      "I only improve when someone forces me to",
+      "Self-improvement is just a trendy buzzword",
+    ],
+    correctAnswer: "I'm always learning and working to become a better person",
+  },
+  {
+    question: "When you and your partner disagree, what's your approach? 🗣️",
+    options: [
+      "Stay calm, listen actively, and work toward a solution together",
+      "Raise my voice until I win the argument",
+      "Give them the silent treatment for days",
+      "Threaten to end the relationship immediately",
+    ],
+    correctAnswer:
+      "Stay calm, listen actively, and work toward a solution together",
+  },
+  {
+    question:
+      "If you could only have one quality in your ideal partner, what would it be? 💖",
+    options: [
+      "Unwavering loyalty and trustworthiness",
+      "Wealth and financial success",
+      "Physical attractiveness above all else",
+      "Social status and popularity",
+    ],
+    correctAnswer: "Unwavering loyalty and trustworthiness",
   },
 ];

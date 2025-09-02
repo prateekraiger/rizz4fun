@@ -1,43 +1,45 @@
-
-import React, { useState } from 'react';
-import GlassCard from './GlassCard';
+import React, { useState } from "react";
+import GlassCard from "./GlassCard";
 
 interface HomePageProps {
   onStart: (name: string) => void;
 }
 
 const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const triggerConfetti = () => {
-    const confettiContainer = document.createElement('div');
-    confettiContainer.style.position = 'fixed';
-    confettiContainer.style.top = '0';
-    confettiContainer.style.left = '0';
-    confettiContainer.style.width = '100%';
-    confettiContainer.style.height = '100%';
-    confettiContainer.style.pointerEvents = 'none';
-    confettiContainer.style.zIndex = '9999';
-    
+    const confettiContainer = document.createElement("div");
+    confettiContainer.style.position = "fixed";
+    confettiContainer.style.top = "0";
+    confettiContainer.style.left = "0";
+    confettiContainer.style.width = "100%";
+    confettiContainer.style.height = "100%";
+    confettiContainer.style.pointerEvents = "none";
+    confettiContainer.style.zIndex = "9999";
+
     document.body.appendChild(confettiContainer);
 
     const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
-    
+
     for (let i = 0; i < 50; i++) {
-      const confetti = document.createElement('div');
-      confetti.style.position = 'absolute';
-      confetti.style.width = '10px';
-      confetti.style.height = '10px';
-      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-      confetti.style.left = Math.random() * 100 + '%';
-      confetti.style.top = '-10px';
-      confetti.style.borderRadius = '50%';
-      confetti.style.animation = `fall ${2 + Math.random() * 3}s linear forwards`;
-      
+      const confetti = document.createElement("div");
+      confetti.style.position = "absolute";
+      confetti.style.width = "10px";
+      confetti.style.height = "10px";
+      confetti.style.backgroundColor =
+        colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.left = Math.random() * 100 + "%";
+      confetti.style.top = "-10px";
+      confetti.style.borderRadius = "50%";
+      confetti.style.animation = `fall ${
+        2 + Math.random() * 3
+      }s linear forwards`;
+
       confettiContainer.appendChild(confetti);
     }
 
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.textContent = `
       @keyframes fall {
         to {
@@ -58,7 +60,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
     e.preventDefault();
     triggerConfetti();
     setTimeout(() => {
-      onStart(name.trim() || 'Challenger');
+      onStart(name.trim() || "Challenger");
     }, 1000);
   };
 
@@ -69,11 +71,17 @@ const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
           <source src="/gif1.mp4" type="video/mp4" />
         </video>
       </div>
-      
-      <h1 className="text-4xl font-bold mb-2 tracking-tight">Date or Single?</h1>
-      <p className="text-lg text-gray-200 mb-6">If you want me, you must pass this coding test.</p>
-      <p className="text-md text-gray-300 italic mb-8">A secret reward is waiting for you...</p>
-      
+
+      <h1 className="text-4xl font-bold mb-2 tracking-tight">
+        Are We Compatible? 💕
+      </h1>
+      <p className="text-lg text-gray-200 mb-6">
+        Take this dating compatibility quiz to see if we're a match!
+      </p>
+      <p className="text-md text-gray-300 italic mb-8">
+        Find out if you have what it takes to win my heart...
+      </p>
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
@@ -86,7 +94,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
           type="submit"
           className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
         >
-          Start Quiz
+          Let's See If We Match! 💖
         </button>
       </form>
     </GlassCard>
